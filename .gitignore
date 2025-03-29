@@ -1,6 +1,7 @@
 *.iml
+*.jks
+
 .gradle
-/local.properties
 .idea
 .DS_Store
 /build
@@ -8,5 +9,3 @@
 .externalNativeBuild
 .cxx
 local.properties
-
-tricko-android-key.jks
