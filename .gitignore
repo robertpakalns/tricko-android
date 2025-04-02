@@ -1,6 +1,9 @@
 *.iml
 *.jks
 
+app/build
+app/release
+
 .gradle
 .idea
 .DS_Store

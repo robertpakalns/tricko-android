@@ -2,7 +2,6 @@ package pro.tricko.android
 
 import android.os.Bundle
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -10,9 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val webView = findViewById<WebView>(R.id.webView)
+        val webView: WebView = findViewById<WebView>(R.id.webView)
         webView.settings.javaScriptEnabled = true
-        webView.webViewClient = WebViewClient()
+        webView.settings.domStorageEnabled = true
         webView.loadUrl("https://tricko.pro")
     }
 }
